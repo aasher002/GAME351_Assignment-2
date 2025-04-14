@@ -5,6 +5,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour {
     public float moveSpeed = 30f;
     public float turnSpeed = 60f;
+    public Rigidbody rb;
 
     // Start is called before the first frame update
     void Start() {
@@ -23,17 +24,17 @@ public class Movement : MonoBehaviour {
 
         if (Input.GetKey(KeyCode.W)) {
             // increment the game object's translation
-            transform.Translate(new Vector3(0, 0, moveSpeed * Time.deltaTime));
+            rb.transform.Translate(new Vector3(0, 0, moveSpeed * Time.deltaTime));
         }
         else if (Input.GetKey(KeyCode.S)) {
-            transform.Translate(new Vector3(0, 0, -moveSpeed * Time.deltaTime));
+            rb.transform.Translate(new Vector3(0, 0, -moveSpeed * Time.deltaTime));
         }
         
         if (Input.GetKey(KeyCode.A)) {
-            transform.Rotate(0, -turnSpeed * Time.deltaTime, 0);
+            rb.transform.Rotate(0, -turnSpeed * Time.deltaTime, 0);
         }
         else if (Input.GetKey(KeyCode.D)) {
-            transform.Rotate(0, turnSpeed * Time.deltaTime, 0);
+            rb.transform.Rotate(0, turnSpeed * Time.deltaTime, 0);
         }
     }
 }

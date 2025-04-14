@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465785, g: 0.49641246, b: 0.57481706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -155,11 +155,6 @@ Transform:
   m_Father: {fileID: 2043148791}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &71175386 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4061428392368526, guid: 5d68a55fb8691f74dbda8f0e7d28977e, type: 3}
-  m_PrefabInstance: {fileID: 1522369321}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,6 +494,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1221934592
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1221934593}
+  m_Layer: 0
+  m_Name: firePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1221934593
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221934592}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.63, z: 5.82}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1522369322}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1416425235
 GameObject:
   m_ObjectHideFlags: 0
@@ -755,13 +781,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1741039100}
-  m_LocalRotation: {x: 0.20217197, y: -0, z: -0, w: 0.9793501}
-  m_LocalPosition: {x: 0.20000076, y: 22.48816, z: -46.40001}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.20217195, y: -0, z: -0, w: 0.9793501}
+  m_LocalPosition: {x: 0, y: 7.122808, z: -16.877197}
+  m_LocalScale: {x: 0.35087723, y: 0.35087717, z: 0.35087717}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1963364898}
-  m_RootOrder: 1
+  m_Father: {fileID: 1522369322}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 23.328, y: 0, z: 0}
 --- !u!114 &1741039102
 MonoBehaviour:
@@ -870,7 +896,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1963364898}
   - component: {fileID: 1963364900}
-  - component: {fileID: 1963364899}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -891,24 +916,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1522369322}
-  - {fileID: 1741039101}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1963364899
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1963364897}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b397197f015549b4f9a0bae7b7f2f5e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 30
-  turnSpeed: 60
 --- !u!54 &1963364900
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -972,6 +982,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   turnSpeed: 180
+  rb: {fileID: 0}
 --- !u!1 &2127041985 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1028590976956288, guid: 5d68a55fb8691f74dbda8f0e7d28977e, type: 3}
@@ -1022,7 +1033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   laserPrefab: {fileID: 1571261664}
-  firePoint: {fileID: 71175386}
+  firePoint: {fileID: 1221934593}
   laserSpeed: 50
   lifeTime: 2
 --- !u!114 &2127041991
@@ -1039,6 +1050,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 30
   turnSpeed: 60
+  rb: {fileID: 2127041987}
 --- !u!1001 &1776752234037324879
 PrefabInstance:
   m_ObjectHideFlags: 0
