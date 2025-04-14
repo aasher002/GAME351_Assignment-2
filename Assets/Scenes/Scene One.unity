@@ -387,3 +387,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cf261f6e0303d94ea3eb8cb506a13eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2030088692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2030088688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b397197f015549b4f9a0bae7b7f2f5e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 30
+  turnSpeed: 60
