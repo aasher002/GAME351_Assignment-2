@@ -6,7 +6,7 @@ public class LaserFire : MonoBehaviour
 {
     public GameObject laserPrefab;
     public Transform firePoint;
-    public float laserSpeed = 50f;
+    public float laserSpeed = 150f;
     public float lifeTime = 2f;
 
     void Update()
