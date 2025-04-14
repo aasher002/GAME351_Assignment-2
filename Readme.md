@@ -48,8 +48,8 @@ Sample code by Leonard D. Brown, University of Arizona.
 This program was developed for educational purposes.
 
 Freeware media assets were used from the following sources:
-(1) http://millionthvector.blogspot.com/
-(2) https://assetstore.unity.com/
-(3) https://www.gameartguppy.com/
-(4) https://www.videvo.net/royalty-free-sound-effects/
-(5) https://freesound.org/search/
+1. http://millionthvector.blogspot.com/
+2. https://assetstore.unity.com/
+3. https://www.gameartguppy.com/
+4. https://www.videvo.net/royalty-free-sound-effects/
+5. https://freesound.org/search/
