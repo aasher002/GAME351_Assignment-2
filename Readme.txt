@@ -1,41 +1,48 @@
-______________________________________________________
-Program 2 Template (Starter Code) - v. 1.0
-School of Information, University of Arizona 
-July 18, 2022
+# GAME351_Assignment-2
 
-This code may modified freely by students of
-GAME 351 (Intro to Game Development) for use
-in their assignments. Other uses covered by
-the terms of the GNU Lesser General Public 
-License (LGPL). Note: Some included assets 
-may be subject to differing licensing agree-
-ments as per the policies of their authors.
+# README for GAME351_Assignment-2
 
-To install the project, follow these steps:
+## Features Implemented
+### Required Features:
+1. Driving a Hovercraft
+2. Three Car Types
+3. Hovercraft Levitation
+4. Toggling Between Cars
 
-1) Create a blank "3D URP" project in Unity Hub.  
-   Note: Your project MUST use the Universal 
-   Rendering Pipeline for textures and effects
-   to render properly.
+### Choice Features:
+5. Dynamic Spawn
+6. Laser-Firing Car
+7. More Realistic Effects
 
-2) Allow the Unity editor to initialize the project.
-3) Save your blank 3D URP project and exit Unity.
-4) Navigate to project directory in file system.
-5) Drop the "Assets" and "Project Settings" folders 
-   into this directory.
-6) Open and reload the Unity project you created.
-7) In the project navigator, go to the assets directory
-   and find the "Scenes" folder.
-8) Click on the "Cross-Country Scene" to load it.
-7) Go to Unity->File->Build Settings and verify that
-   the "Cross-Country Scene" is in the "Scenes in Build" 
-   list.
-8) If the scene is not in the build list, click
-   "Add Open Scenes". The scene should appear checked. 
-9) The game template then should be ready for building 
-   and running.
+## Additions, Omissions, and Known Errata
+### Additions:
+- ?
 
-Credits:
+### Omissions:
+- ?
+
+### Known Errata:
+- ?
+
+## Key Mappings:
+- W: Move forward.
+- S: Move backward
+- A: Rotate left.
+- D: Rotate right.
+
+## Installation Procedure:
+1. Clone or download from GitHub.
+2. Open project in Unity.
+3. Click Play to start.
+
+## Rendering Pipeline:
+- Universal Render Pipeline used for better performance.
+
+## Conclusion:
+The project was completed successfully with the planned features. 
+
+
+## Credits:
  
 Sample code by Leonard D. Brown, University of Arizona.
 This program was developed for educational purposes.
