@@ -7,7 +7,7 @@ public class Hover : MonoBehaviour
     public float hoverHeight = 2f;
     public float hoverForce = 100f;
     public float idleWobbleAmount = 0.1f;
-    public float hoverDamping = 5f;
+    public float hoverDamping = 2f;
 
     private Rigidbody rb;
 
